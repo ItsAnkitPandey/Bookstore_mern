@@ -22,7 +22,7 @@ app.use(express.json()); //middleware for parshing request body
 
 app.get('/', (req, res) => {
     console.log(req);
-    return res.status(234).send('Welcome to Mern');
+    return res.status(234).send('BookStore Backend Service is live');
 })
 
 app.use('/books', bookRoutes)
