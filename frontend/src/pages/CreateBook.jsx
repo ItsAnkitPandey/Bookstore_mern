@@ -31,7 +31,7 @@ const CreateBook = () => {
       .catch((error) => {
         setLoading(false);
         // alert('An error occured. Please check console');
-        enqueueSnackbar('An error occured',{variant: 'error'});
+        enqueueSnackbar('All fields are required.',{variant: 'error'});
         console.log(error);
       })
   }
