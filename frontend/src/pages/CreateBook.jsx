@@ -43,7 +43,7 @@ const CreateBook = () => {
       {loading ? <Spinner /> : ''}
       <div className="flex flex-col border-2 border-sky-400 rounded-xl w-[600px] p-4 mx-auto">
         <div className="my-4">
-          <label className="text-xl mr-4 text-gray-500">Title</label>
+          <label className="text-xl mr-4 text-gray-500">Title<span className='text-red-400'>*</span></label>
           <input
             type='text'
             value={title}
@@ -53,7 +53,7 @@ const CreateBook = () => {
           />
         </div>
         <div className="my-4">
-          <label className="text-xl mr-4 text-gray-500">Author</label>
+          <label className="text-xl mr-4 text-gray-500">Author<span className='text-red-400'>*</span></label>
           <input
             type='text'
             value={author}
@@ -63,7 +63,7 @@ const CreateBook = () => {
           />
         </div>
         <div className="my-4">
-          <label className="text-xl mr-4 text-gray-500">Publish Year </label>
+          <label className="text-xl mr-4 text-gray-500">Publish Year<span className='text-red-400'>*</span> </label>
           <input
             type='number'
             value={publishYear}
